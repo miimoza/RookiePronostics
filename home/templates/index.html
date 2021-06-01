@@ -1,10 +1,46 @@
-
-
-
-
 {% extends "base.html" %}
 
 {% block page_content %}
-<h1>Rookie Pronostics</h1>
+<h1>ROOKIE PRONOSTICS</h1>
+
+
+
+
+<form action="" method="get" class="form-example">
+  <div class="form-example">
+    <label for="channel1">rookie youtube channel 1: </label>
+    <input type="text" name="channel1" pattern="*https://www.youtube.com/channel/[A-Za-z0-9]*$"  id="channel1" required>
+  </div>
+  <div class="form-example">
+    <label for="channel2">rookie youtube channel 2:</label>
+    <input type="text" name="channel2" id="channel2" required>
+  </div>
+  <div class="form-example">
+      <label for="channel3">rookie youtube channel 3:</label>
+      <input type="text" name="channel3" id="channel3" required>
+    </div>
+  <br></br>
+  <div class="form-input">
+    <input type="submit" value="ENVOYER VOS PRONOSTICS!">
+  </div>
+</form>
+
+<table>
+  <caption><h4>LEADERBOARD</h4></caption>
+
+  <tr>
+      <th>pseudo</th>
+      <th>score</th>
+  </tr>
+  <tr>
+      <td><a href></href>Carmen</href></td>
+      <td>33.45</td>
+  </tr>
+  <tr>
+      <td><a href>Michelle</href></td>
+      <td>26.12</td>
+  </tr>
+</table>
+
 {% endblock %}
 
